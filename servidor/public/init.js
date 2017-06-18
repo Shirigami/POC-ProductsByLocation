@@ -29,7 +29,6 @@ function consultar(name){
   }
 }
 
-
 function initMap() {
   var uluru = {lat:9.922360, lng:-84.095637};
   //9.922360, -84.095637
@@ -64,9 +63,6 @@ function displayLocation(latitude,longitude){
                     var add = results[0].formatted_address ;
                     document.getElementById('lugar').value = add;
                     consultar(add);
-
-                    //console.log(findPronvincia());
-
                 }
                 else  {
                     //console.log("address not found");
